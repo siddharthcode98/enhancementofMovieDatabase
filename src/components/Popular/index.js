@@ -64,12 +64,12 @@ class Popular extends Component {
     return (
       <>
         <div className="pagination">
-          <button onClick={this.turnPage} className="next-page" type="button">
-            Next
-          </button>
-          <p className="page-numbers">{currentPage}</p>
           <button onClick={this.prevPage} className="next-page" type="button">
             Prev
+          </button>
+          <p className="page-numbers">{currentPage}</p>
+          <button onClick={this.turnPage} className="next-page" type="button">
+            Next
           </button>
         </div>
         {loading ? (
